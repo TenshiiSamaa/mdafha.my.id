@@ -50,7 +50,15 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <Providers>{children}</Providers>
+        <Providers>
+          {/* Skip Navigation — Accessibility (WCAG 2.1 AA) */}
+          <a href="#main-content" className="skip-nav">
+            Skip to main content
+          </a>
+          <main id="main-content" className="flex flex-col flex-1">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );
