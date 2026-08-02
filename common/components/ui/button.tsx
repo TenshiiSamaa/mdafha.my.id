@@ -14,13 +14,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled || isLoading}
         className={cn(
-          "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:opacity-50 disabled:pointer-events-none cursor-pointer",
+          "inline-flex items-center justify-center rounded-md font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] disabled:opacity-50 disabled:pointer-events-none cursor-pointer",
           {
-            "bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800": variant === "primary",
-            "bg-neutral-100 dark:bg-neutral-800 text-foreground hover:bg-neutral-200 dark:hover:bg-neutral-700": variant === "secondary",
-            "border border-card-border bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800": variant === "outline",
-            "bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 text-foreground": variant === "ghost",
-            "bg-status-error text-white hover:opacity-90": variant === "danger",
+            "bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 active:opacity-80": variant === "primary",
+            "bg-[var(--secondary)] text-[var(--foreground)] hover:bg-[var(--muted)]": variant === "secondary",
+            "border border-[var(--border)] bg-transparent hover:bg-[var(--muted)]": variant === "outline",
+            "bg-transparent hover:bg-[var(--muted)] text-[var(--foreground)]": variant === "ghost",
+            "bg-[var(--destructive)] text-white hover:opacity-90": variant === "danger",
             "h-8 px-3 text-xs": size === "sm",
             "h-10 px-4 py-2 text-sm": size === "md",
             "h-12 px-6 text-base": size === "lg",
