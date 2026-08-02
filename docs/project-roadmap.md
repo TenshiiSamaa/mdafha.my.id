@@ -72,53 +72,30 @@ Selain itu, roadmap juga sebaiknya dirapikan agar menjadi satu dokumen induk.
 
 
 
-### Stage 06.1 — AI Engineering Context
-
-
+### ✅ Stage 06.1 — AI Engineering Context
 
 Sebelum membuat UI.
 
-
-
 Deliverables
 
-
-
 * AGENTS.md
-
 * Architecture Rules
-
 * Folder Rules
-
 * Naming Convention
-
 * Coding Convention
-
 * Component Convention
-
 * Import Convention
-
 * TypeScript Rules
-
 * Tailwind Rules
-
 * Accessibility Rules
-
 * Mobile-first Rules
-
 * AI Coding Workflow
-
 * AI Review Workflow
-
 * AI Bugfix Workflow
-
-
 
 ---
 
-
-
-### Stage 06.2 — Motion Design Foundation
+### ✅ Stage 06.2 — Motion Design Foundation
 
 
 
